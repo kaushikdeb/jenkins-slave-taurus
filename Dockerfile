@@ -4,8 +4,7 @@ MAINTAINER Kaushik Deb <kdeb@secureworks.com>
 
 USER root
 
-#RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-10.noarch.rpm
-#RUN rpm -ivh epel-release-7-10.noarch.rpm
+COPY epel.repo /etc/yum.repos.d/epel.repo
 
 RUN yum -y install python-pip
 
